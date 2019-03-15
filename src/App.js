@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter , Route } from 'react-router-dom';
 import './App.css';
+import Home from './home';
+import ProjectForm from './components/startProject/startProjectForm'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+        <div>
+          <Route path = "/contact-form" render={(props) => <ProjectForm {...props} title = "Thanks for taking the time to reach out. How can I help you today?" />} ></Route>
+          <Route path = "/project-hire" render={(props) => <ProjectForm {...props} title = "Want to discuss a project? I'm most definitely game." />} ></Route>
+          <Route path = "/project-collaboration" render={(props) => <ProjectForm {...props} title = "Interested in working together? We should queue up a chat. I’ll buy the coffee." />} ></Route>
+          <Route exact path = "/" component = {Home} ></Route>
+        </div>
+      </BrowserRouter>
     );
   }
 }
