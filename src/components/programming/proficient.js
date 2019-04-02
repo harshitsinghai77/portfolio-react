@@ -1,5 +1,6 @@
 import React from 'react';
 import image from './icon-designer.svg'
+import '../css/main.css';
 
 const Proficient = () => {
     return (

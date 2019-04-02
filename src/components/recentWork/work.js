@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './workCard';
+import '../css/main.css';
 
 const Work = () => {
     return (

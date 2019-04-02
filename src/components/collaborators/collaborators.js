@@ -1,6 +1,6 @@
 import React from 'react';
 import JSON from './collaborators.json'
-
+import '../css/main.css';
 
 const Collaborators = () => {
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import JSON from './data.json'
 import { Link } from 'react-router-dom';
+import '../css/main.css';
 
 const Card = () => {
 
     const company = JSON.map((item) => {
         return (
             <div key = {item.key} className="column level-item">
-                <div className="box"><img className="logo" src={item.img} />
-                <p>{item.description}</p><a className="link has-text-primary" href = {item.hyperlink}>{item.url}</a>
+                <div className="box"><img alt = "imageLogo" className="logo" src={item.img} />
+                    <p>{item.description}</p><a className="link has-text-primary" href = {item.hyperlink}>{item.url}</a>
                 </div>
             </div>
         )

@@ -3,42 +3,42 @@
         "image" : "http://mattfarley.ca/img/project-chronicled.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "image-colourization-using-generative-adversial-neural-network",
         "id" : "1"
     },
     {
         "image" : "http://mattfarley.ca/img/project-glcsolutions.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "my-first-web-app-using-flask",
         "id" : "6"
     },
     {
         "image" : "http://mattfarley.ca/img/project-coupal.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "graphql-react-chat-app",
         "id" : "2"
     },
     {
         "image" : "http://mattfarley.ca/img/project-userforge.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "starting-with-vue.js",
         "id" : "3"
     },
     {
         "image" : "http://mattfarley.ca/img/project-wedlerengineering.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "introduction-to-progressive-web-app",
         "id" : "4"
     },
     {
         "image" : "http://mattfarley.ca/img/project-southwestforestproducts.png",
         "alt" : "This is some alt",
         "description" : "This is my description",
-        "link" : "http://www.techcrunch.com",
+        "link" : "deep-learning-with-keras",
         "id" : "5"
     }
 ]

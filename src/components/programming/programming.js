@@ -2,7 +2,7 @@ import React from 'react';
 import Interest from './interest';
 import Proficient from './proficient';
 import Library from './library';
-
+import '../css/main.css';
 
 const Programming = () => {
     return (

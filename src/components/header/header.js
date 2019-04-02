@@ -1,6 +1,7 @@
 import React from 'react';
 import image from './header.png'
 import { Link } from 'react-router-dom';
+import '../css/main.css';
 
 const Header = () => {
     return (
@@ -11,7 +12,7 @@ const Header = () => {
                     <div className="navbar-menu" id="navMenu">
                     <div className="navbar-end">
                         <div className="navbar-item">
-                        <p className="control"><Link className="button is-primary is-outlined is-rounded" to = "/contact-form"><span>Say Hello</span></Link></p>
+                            <p className="control"><Link className="button is-primary is-outlined is-rounded" to = "/contact-form"><span>Say Hello</span></Link></p>
                         </div>
                     </div>
                     </div>

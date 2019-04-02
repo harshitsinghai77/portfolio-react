@@ -1,5 +1,6 @@
 import React from 'react';
 import image from './icon-frontend.svg'
+import '../css/main.css';
 
 const Library = () => {
     return (

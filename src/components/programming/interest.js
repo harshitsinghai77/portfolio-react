@@ -1,5 +1,6 @@
 import React from 'react';
 import image from './icon-mentor.svg'
+import '../css/main.css';
 
 const Interest = () => {
     return (

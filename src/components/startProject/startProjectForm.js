@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from '../header/header';
+import '../css/main.css';
 
 class ProjectForm extends Component {
 
@@ -27,7 +28,7 @@ class ProjectForm extends Component {
                     <section className="is-white has-text-centered">
                         <div className="container">
                             <div className="columns is-centered">
-                                <div className="column is-three-quarters"><img className="avatar" src="http://mattfarley.ca/img/mf-avatar.svg" />
+                                <div className="column is-three-quarters"><img className="avatar" alt = "avatarImage" src="http://mattfarley.ca/img/mf-avatar.svg" />
                                     <h1 className="title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">{this.state.title}</h1>
                                 </div>
                             </div>

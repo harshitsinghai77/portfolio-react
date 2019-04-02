@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './card.js'
+import '../css/main.css';
 
 const Companies = () => {
     return (
