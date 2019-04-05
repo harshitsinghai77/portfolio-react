@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/harshitsinghai77/harshitsinghai77.github.io/precache-manifest.4f48d49e1f1d54b3802b08244e29d6e6.js"
+  "/harshitsinghai77.github.io/precache-manifest.f1299edcb33632822707c2aeeb4853dd.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/harshitsinghai77/harshitsinghai77.github.io/index.html", {
+workbox.routing.registerNavigationRoute("/harshitsinghai77.github.io/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
