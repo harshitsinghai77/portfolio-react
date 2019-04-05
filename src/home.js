@@ -5,7 +5,8 @@ import Introduction from './components/introduction/introduction';
 import About from './components/aboutMe/aboutMe';
 import Programming from './components/programming/programming';
 import Work from './components/recentWork/work';
-import Colloborator from './components/collaborators/collaborators';
+import Clubs from './components/clubs/clubs';
+import Hackathons from './components/hackathons/hackathon';
 import Achievement from './components/achievement/achievement';
 import Companies from './components/companies/companies';
 import StartProject from './components/startProject/startProject';
@@ -19,7 +20,8 @@ class App extends Component {
             <About />
             <Programming />
             <Work />
-            <Colloborator />
+            <Clubs />
+            <Hackathons />
             <Achievement />
             <Companies />
             <StartProject />

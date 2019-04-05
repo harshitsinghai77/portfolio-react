@@ -8,7 +8,7 @@ const Card = () => {
     const company = JSON.map((item) => {
         return (
             <div key = {item.key} className="column level-item">
-                <div className="box"><img alt = "imageLogo" className="logo" src={item.img} />
+                <div className="box"><img alt = "imageLogo" className="logo" src={require(`${item.imgSrc}`)} />
                     <p>{item.description}</p><a className="link has-text-primary" href = {item.hyperlink}>{item.url}</a>
                 </div>
             </div>

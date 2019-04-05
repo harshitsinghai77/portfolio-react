@@ -6,7 +6,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import Image from './arrow.png'
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+
 
 const styles = {
   root: {
@@ -27,9 +28,9 @@ function ButtonAppBar(props) {
     <div className={classes.root}>
       <AppBar style={{position: 'fixed', top: 0, background: 'white'}}>
           <Toolbar>
-            <IconButton className={classes.menuButton} color="red" aria-label="Menu">
-            <Link to = "/" > <img src = {Image} /> </Link>
-            </IconButton>
+              <IconButton className={classes.menuButton} color="red" aria-label="Menu">
+                <img onClick={props.history.goBack} src = {Image} />
+              </IconButton>
             <Typography variant="h6" style={{color: 'black'}} className={classes.grow}>
               Home
             </Typography>
@@ -43,4 +44,4 @@ ButtonAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(ButtonAppBar);
+export default withRouter(withStyles(styles)(ButtonAppBar));

@@ -14,11 +14,17 @@ const Achievement = () => {
                     <div className="columns is-multiline is-mobile">
                         <ul>
                             <h3 className="subtitle is-size-5-desktop">
-                                Launched a blog for college students.Built everything from the front-end to the back-end and everything in between.Applied master-slave architecture to serve the read-write request
-                                Served as the Techincal Head of ACM student chapter and Cerebrum club. Organized hackathons under ACM chapter and set-up the blog on Azure using cosmosDB for Cerebrum club.
+                                <li>Software Engineer Intern at Opalina Technologies.</li>
+								<li>Selected for the Grand Finale of Smart India Hackathon 2019</li>
+								<li>Secured 1st Position in MLH 2018 Local Hackday Hackathon hosted by GitHub</li>
+								<li>Secured 3rd position at hackBMU hackathon BML Munjal University.</li>
+								<li>Top 5 in SNU HackData 2019</li>
                             </h3>
                             <h3 className="subtitle is-size-5-desktop">
-                                Served as the Techincal Head of ACM student chapter and Cerebrum club. Organized hackathons under ACM chapter and set-up the blog on Azure using cosmosDB for Cerebrum club.
+								Prior to joining Opalina Technologies as a software engineer intern in 2018, I was nominated as the
+								technical head of ACM Student Chapter and Google Developer Student Club. I was also fortunate enough to
+								work with Leading India.ai nationwide initiative on "AI and deep learning Skilling and Research". 
+                                Last semester I was selected as a Teaching Assistant, helping Sophomore students in their Python coursework and projects. At DSC I was handled with the responsibility to head the app development team.
                             </h3>
                         </ul>
                     </div>

@@ -13,7 +13,7 @@ const Proficient = () => {
                 <li>Java</li>
                 <li>Python</li>
                 <li>Node.js</li>
-                <li>React</li>
+                <li>React JS</li>
                 <li>JavaScript</li>
                 <li>MongoDB</li>
             </ul>

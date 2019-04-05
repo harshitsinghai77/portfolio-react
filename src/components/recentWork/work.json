@@ -1,44 +1,44 @@
 [
     {
-        "image" : "http://mattfarley.ca/img/project-chronicled.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "image-colourization-using-generative-adversial-neural-network",
+        "imgSrc" : "./images/webase.png",
+        "alt" : "Webase turn design into code",
+        "description" : "Neural network to code a basic HTML, CSS website based on a picture of a design mockup",
+        "link" : "webase-turn-design-to-code-using-deep-learning",
         "id" : "1"
     },
     {
-        "image" : "http://mattfarley.ca/img/project-glcsolutions.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "my-first-web-app-using-flask",
-        "id" : "6"
-    },
-    {
-        "image" : "http://mattfarley.ca/img/project-coupal.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "graphql-react-chat-app",
+        "imgSrc" : "./images/gan.png",
+        "alt" : "Colorizing and Restoring Old Images with Deep Learning",
+        "description" : "Colorizing and Restoring Old Images with Deep Learning",
+        "link" : "colorizing-and-restoring-images-with-deep-learning",
         "id" : "2"
     },
     {
-        "image" : "http://mattfarley.ca/img/project-userforge.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "starting-with-vue.js",
+        "imgSrc" : "./images/wester.png",
+        "alt" : "Web application for recruitment process",
+        "description" : "React web application to carry the online test assessment for the interviewee",
+        "link" : "wester-react-spring-boot",
         "id" : "3"
     },
     {
-        "image" : "http://mattfarley.ca/img/project-wedlerengineering.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "introduction-to-progressive-web-app",
+        "imgSrc" : "./images/voice-interface.png",
+        "alt" : "Web application for recruitment process",
+        "description" : "A multi-lingual AI voice enabled chatbot",
+        "link" : "multilingual-ai-voice-interface-bot-for-kotak-mahindra-bank",
         "id" : "4"
     },
     {
-        "image" : "http://mattfarley.ca/img/project-southwestforestproducts.png",
-        "alt" : "This is some alt",
-        "description" : "This is my description",
-        "link" : "deep-learning-with-keras",
+        "imgSrc" : "./images/smart-mirror.png",
+        "alt" : "SmartMirror using Python and Raspberry pi",
+        "description" : "Smart mirror which displays information such as weather, time, date, and news updates.",
+        "link" : "smart-mirror-using-python-and-raspberry-pi",
         "id" : "5"
+    },
+    {
+        "imgSrc" : "./images/portfolio.png",
+        "alt" : "Portfolio website based on React",
+        "description" : "The website you're seeing right now.",
+        "link" : "portfolio-website-using-react",
+        "id" : "6"
     }
 ]
