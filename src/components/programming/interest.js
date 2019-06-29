@@ -11,7 +11,7 @@ const Interest = () => {
             <p className="list-title has-text-primary has-text-weight-normal">I'd like to work with... </p>
             <ul>
                 <li>Deep Learning</li>
-                <li>Image and Video Processing</li>
+                <li>Computer Vision</li>
                 <li>Big Data Analytics</li>
                 <li>Natural Language Processing</li>
                 <li>Open Source</li>

@@ -2,12 +2,12 @@
     {
         "imgSrc" : "./images/acm.jpg",
         "alt" : "Image2",
-        "key" : "3"
+        "key" : "1"
     },
     {
         "imgSrc" : "./images/cerebrum.jpg",
         "alt" : "Image2",
-        "key" : "3"
+        "key" : "2"
     },
     {
         "imgSrc" : "./images/google.jpg",
@@ -17,6 +17,6 @@
     {
         "imgSrc" : "./images/misha.png",
         "alt" : "Image2",
-        "key" : "3"
+        "key" : "4"
     }
 ]

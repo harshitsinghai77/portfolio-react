@@ -13,7 +13,7 @@ const Author = () => {
                             <div className="col-md-2">
                                 <div className="card-avatar">
                                     <a href="#pablo">
-                                        <img className="img" src="https://avatars0.githubusercontent.com/u/30886142" />
+                                        <img alt = "avatar" className="img" src="https://avatars0.githubusercontent.com/u/30886142" />
                                     </a>
                                     <div className="ripple-container"></div>
                                 </div>

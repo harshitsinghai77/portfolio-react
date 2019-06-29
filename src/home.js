@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
+import './axiosInstance';
+
 import Header from './components/header/header';
 import Introduction from './components/introduction/introduction';
 import About from './components/aboutMe/aboutMe';
@@ -11,23 +13,20 @@ import Achievement from './components/achievement/achievement';
 import Companies from './components/companies/companies';
 import StartProject from './components/startProject/startProject';
 
-class App extends Component {
-  render() {
-    return (
-        <div>
-            <Header />
-            <Introduction />
-            <About />
-            <Programming />
-            <Work />
-            <Clubs />
-            <Hackathons />
-            <Achievement />
-            <Companies />
-            <StartProject />
-        </div>
-    );
-  }
-}
+const App = () => (
+    <>
+      <Header />
+      <Introduction />
+      <About />
+      <Programming />
+      <Work />
+      <Clubs />
+      <Hackathons />
+      <Achievement />
+      <Companies />
+      <StartProject />
+    </>
+)
+
 
 export default App;

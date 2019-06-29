@@ -11,16 +11,11 @@ const Library = () => {
             <p className="list-title has-text-primary has-text-weight-normal">Tools and Script</p>
             <ul>
                 <li>Keras</li>
-                <li>TensorFlow</li>
+                <li>TensorFlow 2.0</li>
+                <li>Redux</li>
                 <li>GraphQL</li>
                 <li>Vue.js</li>
                 <li>Git</li>
-                <li>Hadoop(HDFS)</li>
-                <li>Spark</li>
-                <li>Hive</li>
-                <li>Pig Latin</li>
-                <li>Azure</li>
-                <li>MySQL</li>
             </ul>
         </div>
     )

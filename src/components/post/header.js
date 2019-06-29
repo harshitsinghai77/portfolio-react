@@ -9,7 +9,7 @@ const Header = (props) => {
                 <div className="row">
                     <div className="col-md-8 ml-auto mr-auto text-center">
                         <h1 className="title">{props.title}</h1>
-                        <h4>{props.subtitle}</h4>
+                        <h4 style = {{color : 'white'}}>{props.subtitle}</h4>
                         <br />
                     </div>
                 </div>

@@ -1,106 +1,68 @@
-import React, { Component } from 'react';
-import Title from './title';
-import Header from './header';
-import Content from './content';
+import React from 'react';
+import Title from './Title';
+import HeaderComponent from './Header';
+import Paragraph from './Paragraph';
 import Image from './Image';
-import Author from './author';
+import Author from './Author';
+import AppHeader from './AppHeader'
 import './style.css';
-import AppBar from '../appBar/appBar'
-import JSON from './blogPost.json';
-import { Link } from 'react-router-dom';
+import Footer from './Footer';
 
-class Post extends Component {
+const Post = (props) => {
 
-    state = {
-        post : null
-    }
-
-    componentDidMount(){
+    const [post, setPost] = React.useState(null)
+    
+    React.useEffect(() => {
         window.scrollTo(0,0);
-        const find = this.props.match.params.postString
-        JSON.map((item) => {
-            if(item.id === find){
-                const post = item
-                this.setState({post: post})
-            }
-        })
-    }
+        window.axiosInstance.get(`/blog/5d163c8a90ed2322c02243bc`)
+            .then(res => {
+                if(res.data) {
+                    console.log(res.data)
+                    setPost(res.data)
+                }
+            })
+    }, [])
+ 
+    const Header = () => (
+        post ? <HeaderComponent title = {post.title} subtitle = {post.subTitle} backgroundImage = {post.backgroundImage} /> : null
+    )
 
-    render () {
-
-        const headerData = this.state.post ? 
-                <Header title = {this.state.post.title} subtitle = {this.state.post.subtitle} backgroundImage = {this.state.post.backgroundImage} /> 
-                    : null
-        
-        const contentData = this.state.post ? 
+    const ContentData = post ? 
                 <div className="col-md-8 ml-auto mr-auto"> 
-                    {this.state.post.content.map((item) => {
+                    {post.content.map((item) => {
                         return (
-                            <div key = {item.id}>
+                            <div key = {item._id}>
                                 <Title heading = {item.heading} />
-                                {item.para.map((data) => {
+                                {item.paragraph.map((data) => {
                                     return(
-                                        <Content para = {data} />
+                                        <Paragraph key = {data._id} para = {data.para} />
                                     )
                                 })}
                                 {item.img ? <Image url = {item.img} /> : null }
                             </div>
                         )
                     })}
-                </div> : null
-
-        return (
-            <div>
-                <AppBar />
-                <div className="blog-post"> 
-                    {headerData}
-                    <div className="main main-raised">
-                        <div className="container">
-                            <div className="section section-text">
-                                <div className="row">
-                                    {contentData}
-                                </div>
+                </div> : <h1>Loading...</h1>
+    
+    return (
+        <div>
+            <div className="blog-post"> 
+                <AppHeader />
+                <Header />
+                <div className="main main-raised">
+                    <div className="container">
+                        <div className="section section-text">
+                            <div className="row">
+                                {ContentData}
                             </div>
-                            <Author />
                         </div>
+                        <Author />
                     </div>
                 </div>
-                <footer className="footer ">
-                    <div className="container">
-                        <nav className="pull-left">
-                            <ul>
-                                <li>
-                                    <Link to="/contact-form">
-                                        Contact Me
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/project-hire">
-                                        Hire Me
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/project-collaboration">
-                                        Collaboration
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link to="/">
-                                        Home
-                                    </Link>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div className="copyright pull-right">
-                            &copy;
-                            made with <i className="material-icons">favorite</i> by <a href="https://www.creative-tim.com">Harshit Singhai</a>.
-                        </div>
-                    </div>
-                </footer>
             </div>
-        )
-    }
-    
+            <Footer />
+        </div>
+    )
 }
-
+    
 export default Post;

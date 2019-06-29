@@ -4,13 +4,11 @@ import '../css/main.css';
 
 const Collaborators = () => {
 
-    const collab = JSON.map((item) => {
-        return (
-            <div key = {item.key} className="column is-half-mobile is-one-quarter-tablet">
+    const collab = JSON.map((item) => (
+        <div key = {item.key} className="column is-half-mobile is-one-quarter-tablet">
                 <figure className="image is-2x1"><img className="client-logo" src={item.imgSrc} alt = {item.alt} /></figure>
             </div>
-        )
-    });
+    ))
 
     return (
         <section className="section clients is-medium is-white has-text-centered">

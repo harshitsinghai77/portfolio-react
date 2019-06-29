@@ -3,7 +3,8 @@ import { BrowserRouter , Route } from 'react-router-dom';
 import './App.css';
 import Home from './home';
 import ProjectForm from './components/startProject/startProjectForm'
-import BlogPost from './components/post/post'
+import BlogPost from './components/post/Post'
+import 'antd/dist/antd.css';
 
 class App extends Component {
   render() {

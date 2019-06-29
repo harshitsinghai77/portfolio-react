@@ -10,10 +10,10 @@ const Proficient = () => {
             <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
             <p className="list-title has-text-primary has-text-weight-normal">Languages</p>
             <ul>
-                <li>Java</li>
                 <li>Python</li>
-                <li>Node.js</li>
+                <li>Java</li>
                 <li>React JS</li>
+                <li>Node.js</li>
                 <li>JavaScript</li>
                 <li>MongoDB</li>
             </ul>
