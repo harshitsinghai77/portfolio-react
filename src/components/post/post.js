@@ -6,6 +6,7 @@ import Image from './Image';
 import Author from './Author';
 import AppHeader from './AppHeader'
 import './style.css';
+import { Spin } from 'antd';
 import Footer from './Footer';
 
 const Post = (props) => {
@@ -14,10 +15,10 @@ const Post = (props) => {
     
     React.useEffect(() => {
         window.scrollTo(0,0);
-        window.axiosInstance.get(`/blog/5d163c8a90ed2322c02243bc`)
+        const id = props.match.params.blogId
+        window.axiosInstance.get(`/blog/${id}`)
             .then(res => {
                 if(res.data) {
-                    console.log(res.data)
                     setPost(res.data)
                 }
             })
@@ -31,23 +32,19 @@ const Post = (props) => {
                 <div className="col-md-8 ml-auto mr-auto"> 
                     {post.content.map((item) => {
                         return (
-                            <div key = {item._id}>
+                            <React.Fragment key = {item._id}>
                                 <Title heading = {item.heading} />
-                                {item.paragraph.map((data) => {
-                                    return(
-                                        <Paragraph key = {data._id} para = {data.para} />
-                                    )
-                                })}
+                                <Paragraph para = {item.paragraph} />
                                 {item.img ? <Image url = {item.img} /> : null }
-                            </div>
+                            </React.Fragment>
                         )
                     })}
-                </div> : <h1>Loading...</h1>
+                </div> : <Spin style = {{margin:'auto', marginBottom: '5rem'}} size="large" />
     
     return (
         <div>
             <div className="blog-post"> 
-                <AppHeader />
+                <AppHeader  />
                 <Header />
                 <div className="main main-raised">
                     <div className="container">

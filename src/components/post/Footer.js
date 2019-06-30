@@ -31,7 +31,7 @@ function Footer(){
                 </nav>
                 <div className="copyright pull-right">
                     &copy;
-                    made with <i className="material-icons">favorite</i> by <a href="https://www.creative-tim.com">Harshit Singhai</a>.
+                    made with <i className="material-icons">favorite</i> by <a href="https://harshitsinghai77.github.io/">Harshit Singhai</a>.
                 </div>
             </div>
         </footer>

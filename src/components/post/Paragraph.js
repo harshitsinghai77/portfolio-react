@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
+import { Markup } from 'interweave';
 
 const Content = (props) => {
+
     return (
         <div>
-            <p>{props.para}</p>
-            <br />
+            <Markup content={props.para} />
         </div>
     )
 }

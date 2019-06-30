@@ -20,7 +20,7 @@ const WorkCard = () => {
     const work = data && Array.isArray(data) ? data.map((item) => {
 		return (
 			<div key = {item._id} className="column is-12-mobile is-half-tablet is-one-third-desktop">
-					<Link to = {`/blog/${linkify(item.name)}`}>
+					<Link to = {`/blog/${linkify(item.name)}/${item.blog}`}>
 						<figure className="image is-3by2"><img className="project-thumb" src={item.imageUrl} alt = {item.name} />
 							<figcaption>
 							<h1 className="title is-size-5 is-size-4-widescreen">{item.description}</h1>
