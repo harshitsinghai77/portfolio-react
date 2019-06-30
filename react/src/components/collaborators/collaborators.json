@@ -1,0 +1,32 @@
+[
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-domain7.svg",
+        "alt" : "Image1",
+        "key" : "1"
+    },
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-redstamp.svg",
+        "alt" : "Image2",
+        "key" : "2"
+    },
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-goodkind.svg",
+        "alt" : "Image2",
+        "key" : "3"
+    },
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-briteweb.svg",
+        "alt" : "Image2",
+        "key" : "4"
+    },
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-chronicled.svg",
+        "alt" : "Image2",
+        "key" : "5"
+    },
+    {
+        "imgSrc" : "http://mattfarley.ca/img/cl-briteweb.svg",
+        "alt" : "Image2",
+        "key" : "6"
+    }
+]

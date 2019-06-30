@@ -1,0 +1,22 @@
+[
+    {
+        "imgSrc" : "./images/acm.jpg",
+        "alt" : "Image2",
+        "key" : "1"
+    },
+    {
+        "imgSrc" : "./images/cerebrum.jpg",
+        "alt" : "Image2",
+        "key" : "2"
+    },
+    {
+        "imgSrc" : "./images/google.jpg",
+        "alt" : "Image2",
+        "key" : "3"
+    },
+    {
+        "imgSrc" : "./images/misha.png",
+        "alt" : "Image2",
+        "key" : "4"
+    }
+]
