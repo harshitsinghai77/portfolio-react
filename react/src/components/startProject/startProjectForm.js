@@ -17,7 +17,7 @@ function ContactForm(props) {
         notification[type]({
           message: "Sure, The coffee is on me!!",
           description:
-            `Thanks,${name} for reacing out to me.You query has been saved. I will get back to you as soon as possbile`,
+            `Thanks ${name}, for reaching out to me.You query has been saved. I will get back to you as soon as possbile`,
         });
     };
 
