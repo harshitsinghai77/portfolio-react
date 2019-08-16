@@ -3,9 +3,8 @@ import JSON from './data.json'
 import { Link } from 'react-router-dom';
 import '../css/main.css';
 
-const Card = () => {
-
-    const company = JSON.map((item) => {
+const Company = () => (
+    JSON.map((item) => {
         return (
             <div key = {item.key} className="column level-item">
                 <div className="box"><img alt = "imageLogo" className="logo" src={require(`${item.imgSrc}`)} />
@@ -13,14 +12,17 @@ const Card = () => {
                 </div>
             </div>
         )
-    });
+    })
+);
+
+const Card = () => {
 
     return (
         <section className="section startups has-text-centered">
             <div className="container is-narrow">
                 <div className="startup-grid">
                     <div className="columns is-centered level">
-                        {company}
+                        <Company />
                     </div>
                 </div>
                 <div className="columns is-centered">
@@ -31,7 +33,6 @@ const Card = () => {
                 </div>
             </div>
         </section>
-
     )
 }
 
