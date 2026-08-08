@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "http://harshitsinghai77.github.io/",
   "dependencies": {
-    "antd": "^3.19.8",
+    "antd": "^6.5.2",
     "axios": "^0.32.0",
     "interweave": "^11.1.0",
     "react": "^16.8.6",
